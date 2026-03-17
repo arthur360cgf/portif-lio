@@ -17,7 +17,6 @@
    display: block;
    width: 130px;
    height: 100px;
-   background: url() no-repeat center;/* <-------- AQUI**/
    position: absolute;
    bottom: -50px; 
 }
@@ -86,9 +85,14 @@
 .courses{
     margin-bottom: 60px;
 }
-.courses h3::before{
-    background: url() no-repeat center center;/* <-------- AQUI**/
+
+.cDescription{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
 }
+
 
 .formation-extra h3{
     font-size: 0.875rem;
@@ -109,18 +113,30 @@
     left: -36px;
     top: -4px;
 }
-.languages{
-    background: url() no-repeat center center;/* <-------- AQUI**/
-    
-    
-}
+
 .languages h3{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
     font-size: 0.875rem;
     line-height: 1.4;
     color: #8f8f8f;
     text-transform: uppercase;
-    margin-bottom: 30px;
-    position: relative;
+}
+/* .languages h3::before{
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -36px;
+    top: -4px;
+
+} */
+.formation-extra i, .languages i{
+    font-size: 1.125rem;
+    color: #ffff;
 }
 .languages span{
     color: #8f8f8f;
